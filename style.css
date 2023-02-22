@@ -112,7 +112,7 @@ section::before {
   grid-area: work-2;
 }
 #work-2:hover::after {
-  content: "Software Project";
+  content: "Web Project";
 }
 
 #work-3 {
@@ -143,12 +143,36 @@ section::before {
   .home img {
     width: 50%;
   }
+
+  section::before {
+    left: -2;
+  }
+
+  .contact-img {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  .home {
+    padding-top: 32px;
+  }
+
+  .home h1 {
+    font-size: 56px;
+  }
+
+  .home h3 {
+    font-size: 32px;
+  }
+
   section::before {
-    left: -10;
+    left: 0;
     font-size: 64px;
+  }
+
+  .contact-img {
+    width: 50%;
   }
 }
 
